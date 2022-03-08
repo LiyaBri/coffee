@@ -1,0 +1,33 @@
+@mixin back {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 384px;
+        height: 894px;
+        background: $main-color;
+        z-index: -1;
+    }
+}
+
+@mixin back-2 {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 326px;
+        height: 906px;
+        background: $main-color;
+        z-index: -1;
+        margin-left: 1076px;
+    }
+}
+
+@mixin back-white {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1076px;
+        height: 802px;
+        background: $light-color;
+        z-index: -1;
+    }
+}

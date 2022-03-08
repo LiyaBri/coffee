@@ -1,0 +1,111 @@
+.choose {
+    min-height: 894px;
+    position: relative;
+    @include back;
+
+    &__subtitle {
+        padding-top: 90px;
+    }
+
+    &__title {
+        margin-top: 6px;
+        margin-bottom: 72px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,  559px);
+        grid-template-rows: repeat(2, 256px);
+        column-gap: 30px;
+        row-gap: 32px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 236px 360px;
+        filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+    }
+
+    &__item {
+        background: white;
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(4, auto);
+        padding: 42px 42px 44px 42px;
+        &-price {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $beige-color;
+            padding-bottom: 2px;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: $dark-color;
+            margin-bottom: 24px;
+        }
+
+        &-desc {
+            max-width: 276px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 16px;
+            color: $dark-color;
+            margin-bottom: 18px;
+        }
+
+        &-buttons {
+            display: grid;
+            grid-template-columns: 124px 124px;
+            column-gap: 10px;
+            justify-items: space-between;
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &-cart {
+            width: 124px;
+            height: 32px;
+            background: $beige-color;
+            border-radius: 19px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            color: #F9FBFF;
+            text-transform: uppercase;
+            border: 0;
+            transition: 0.5s all;
+            &:hover {
+                box-shadow: 2px 2px 6px  $beige-color;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &-spec {
+            font-weight: bold;
+            font-size: 16px;
+            color: $dark-color;
+            background: white;
+            text-transform: uppercase;
+            border: 0;
+            transition: 0.5s all;
+            width: 124px;
+            height: 32px;
+            border-radius: 19px;
+            &:hover {
+                font-size: 18px;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    
+}
+
+

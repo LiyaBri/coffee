@@ -1,0 +1,96 @@
+.combo {
+    height: 906px;
+    position: relative;
+    @include back-2;
+    overflow: hidden; 
+    &__subtitle {
+        padding-top: 88px;
+        margin-bottom: 6px;
+    }
+    &__title {
+        margin-bottom: 64px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 360px);
+        column-gap: 30px;
+        grid-template-rows: minmax(562px, auto);
+    }
+    &__item {
+        padding: 42px;
+        background: white;
+    }
+
+    &__img {
+      width: 360px;
+      height: 300px; 
+    }
+
+    &__price {
+        margin-top: 42px;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 10px;
+        align-items: center;
+        &-new {
+            font-weight: 600;
+            font-size: 20px;
+            color: #C7A17A; 
+            margin-right: 30px;
+        }
+        &-old {
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #415167;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #151D28;
+        margin-bottom: 32px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        &-cart {
+            width: 134px;
+            height: 32px;
+            background: $beige-color;
+            border-radius: 19px; 
+            border: 0;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            color: #F9FBFF;
+            text-transform: uppercase;
+            transition: 0.5s all;
+            &:hover {
+                box-shadow: 2px 2px 6px  $beige-color;
+            }
+        }
+        &-desc {
+            font-weight: bold;
+            font-size: 16px;
+            color: $dark-color;
+            background: white;
+            text-transform: uppercase;
+            border: 0;
+            transition: 0.5s all;
+            width: 88px;
+            height: 32px;
+            border-radius: 19px;
+            &:hover {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
